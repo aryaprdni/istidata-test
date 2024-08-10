@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ApplicationDataKaryawanApplication<application-data-karyawan>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "aryaprdni.restful.ApplicationDataKaryawanApplication",
+            "projectName": "application-data-karyawan",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

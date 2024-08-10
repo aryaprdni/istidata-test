@@ -1,0 +1,14 @@
+### Create
+
+POST http://localhost:8080/api/users
+Accept: application/json
+Content-Type: application/json
+
+{
+    "NIK" : 1234,
+    "Nama_Lengkap" : "Arya",
+    "Jenis_Kelamin" : "Laki-laki",
+    "Tanggal_Lahir" : "2003-07-09",
+    "Alamat" : "Jl Salemba",
+    "Negara" : "Indonesia"
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <h1 class="text-center">Edit Pengguna</h1>
+
+    <form id="editUserForm" class="mb-4">
+
+        <div class="mb-3">
+            <label for="nik" class="form-label">NIK</label>
+            <input type="number" class="form-control" id="nik" name="nik" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label for="fullName" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Jenis Kelamin</label>
+            <div>
+                <input type="radio" id="Laki-laki" name="jenis_Kelamin" value="Laki-laki">
+                <label for="Laki-laki">Laki-laki</label>
+            </div>
+            <div>
+                <input type="radio" id="Perempuan" name="jenis_Kelamin" value="Perempuan">
+                <label for="Perempuan">Perempuan</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+            <input type="date" class="form-control" id="tanggalLahir" name="tanggalLahir" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="alamat" class="form-label">Alamat</label>
+            <textarea class="form-control" id="alamat" name="alamat" rows="3" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="negara" class="form-label">Negara</label>
+            <select class="form-control" id="negara" name="negara" required>
+                <option value="">Pilih Negara</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapore">Singapore</option>
+            </select>
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <button type="button" id="updateBtn" class="btn btn-primary" style="width: 100px;">Ubah</button>
+            <a href="index.html" class="btn btn-secondary ms-2" style="width: 100px;">Kembali</a>
+        </div>
+    </form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/edit_script.js"></script>
+</body>
+</html>

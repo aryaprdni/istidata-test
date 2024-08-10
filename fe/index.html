@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <h1 class="text-center">Aplikasi Data Pribadi</h1>
+
+    <form id="searchAddForm" class="mb-4">
+        <div class="row">
+            <div class="col-md-6 mb-3 custom-form-group">
+                <label for="nik" class="form-label">NIK</label>
+                <input type="number" class="form-control" id="nik" name="nik">
+                <label for="fullName" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="fullName" name="fullName">
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-end">
+            <button type="button" id="searchBtn" class="btn btn-primary" style="width: 100px;">Search</button>
+            <button type="button" id="addBtn" class="btn btn-primary me-2" style="width: 100px;">Add</button>
+        </div>
+    </form>
+
+    <div id="responseMessage" class="mb-3"></div>
+    <table class="table mt-5">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>NIK</th>
+                <th>Nama Lengkap</th>
+                <th>Jenis Kelamin</th>
+                <th>Tanggal Lahir</th>
+                <th>Alamat</th>
+                <th>Negara</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="personalDataTableBody">
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
